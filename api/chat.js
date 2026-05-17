@@ -65,6 +65,6 @@ SKILLS: Snowflake, Power BI, Looker, Tableau, Python, SQL, Claude API, RAG, LLM 
 
   } catch (err) {
     console.error(err);
-    return res.status(500).json({ reply: "Something went wrong. Try again?" });
+    return res.status(500).json({ reply: "Something went wrong. Try again?", error: err.message });
   }
 }
